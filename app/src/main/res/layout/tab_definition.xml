@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:textSize="25dip"
+        android:id="@+id/txtTextWord"
+        android:text="Word"
+        android:textAlignment="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#F0F0F4"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:orientation="vertical">
+        android:fillViewport="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDefinition"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="32dip"
+        android:layout_height="50dip"
+        android:layout_marginRight="20dip"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|right"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/ivSpeaker"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:background="@drawable/speaker"/>
+    </LinearLayout>
+</RelativeLayout>

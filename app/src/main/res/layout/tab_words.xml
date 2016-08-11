@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="2dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/top_bg1"/>
+
+    <LinearLayout
+        android:layout_width="5dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="3dip"
+            android:layout_height="match_parent"
+            android:id="@+id/ivSpeaker"
+            android:background="@drawable/top_bg2"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/WordListList"
+        android:layout_gravity="center_horizontal" />
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost">
+
+    <RelativeLayout
+        android:id="@+id/OuterLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/top_title"
+            android:tileMode="repeat"/>
+
+        <ImageView
+            android:layout_width="70dip"
+            android:layout_height="60dip"
+            android:background="@drawable/top_left"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:gravity="center_vertical|center_horizontal"
+            android:textStyle="bold"
+            android:textSize="20dip"
+            android:textColor="#FFFFFF"
+            android:text="English-Khmer Dictionary" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:layout_marginTop="60dip"
+            android:background="@drawable/mid_img"
+            android:tileMode="repeat"/>
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="55dip"
+            android:layout_marginTop="60dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/left_img"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:layout_marginTop="60dip"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/right_img"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtSearch"
+            android:layout_width="match_parent"
+            android:layout_marginTop="65dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginLeft="40dip"
+            android:layout_height="45dip"
+            android:inputType="text"
+            android:hint="Search Dictionary"
+            android:background="@null"/>
+
+        <TabWidget
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginTop="115dip"
+            android:id="@android:id/tabs"
+            android:baselineAligned="false"
+            android:gravity="center">
+        </TabWidget>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dip"
+            android:id="@android:id/tabcontent">
+        </FrameLayout>
+
+    </RelativeLayout>
+</TabHost>
